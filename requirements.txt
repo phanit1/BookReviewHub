@@ -1,7 +1,7 @@
-# Flask
-Flask-Session
-psycopg2-binary
-SQLAlchemy
+# # Flask
+# Flask-Session
+# psycopg2-binary
+# SQLAlchemy
 
 Click==7.0
 Flask==1.1.1
