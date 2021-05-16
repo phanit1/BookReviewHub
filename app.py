@@ -16,12 +16,12 @@ import logging
 logging.basicConfig(level=logging.DEBUG)
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv("DATABASE_URL")
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://oupmdpbbloafkq:524dc2ab68ad1420bdb528f75b63e4c1f43af3d677d07e2dfe2e7ef3bda4c4eb@ec2-34-198-243-120.compute-1.amazonaws.com:5432/d6i86eicfinhqi"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 
-engine = create_engine(os.getenv("DATABASE_URL"))
+engine = create_engine("postgresql://oupmdpbbloafkq:524dc2ab68ad1420bdb528f75b63e4c1f43af3d677d07e2dfe2e7ef3bda4c4eb@ec2-34-198-243-120.compute-1.amazonaws.com:5432/d6i86eicfinhqi")
 
 Session(app)
 db.init_app(app)
